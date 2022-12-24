@@ -2,8 +2,10 @@ import "./index.css";
 
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { MUITheme } from "./styles";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "@emotion/react";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -11,9 +13,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ThemeProvider theme={MUITheme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
