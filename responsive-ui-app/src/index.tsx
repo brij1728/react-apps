@@ -2,10 +2,10 @@ import "./index.css";
 
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { MUITheme } from "./styles";
+import { MUITheme } from "./styles/Theme/Theme";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@mui/material";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(

@@ -1,19 +1,23 @@
 import { Blog, Possibility, WhatGPT3 } from "../../containers";
+import { Box, styled } from "@mui/material";
 import { Brand, CTA } from "../../components";
 import { Footer, Header, Navbar } from "../../layouts";
 
-import { Box } from "@mui/material";
 import { Feature } from "../../features";
 
 export const Home = () => {
+  // const StyledBox = styled(Box)(({ theme }) => ({
+  //   backgroundColor: theme.status.danger,
+  // }));
+
   return (
     <div>
       <Box
         sx={{
           width: 300,
           height: 300,
-          color: "secondary.main",
           bgcolor: "primary.main",
+          color: (theme) => theme.status.danger,
         }}
       >
         <Navbar />
