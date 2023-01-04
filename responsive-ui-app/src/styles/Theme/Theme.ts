@@ -13,6 +13,10 @@ export const MUITheme = createTheme({
     otherColor: {
       main: "#999",
     },
+    background: {
+      default: " #040c18",
+      paper: "#FFD600",
+    },
   },
 
   status: {

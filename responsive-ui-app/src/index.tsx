@@ -1,11 +1,12 @@
 import "./index.css";
 
+import { CssBaseline, ThemeProvider } from "@mui/material";
+
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { MUITheme } from "./styles/Theme/Theme";
+import { MUITheme } from "./styles";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ThemeProvider } from "@mui/material";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -13,11 +14,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={MUITheme}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <ThemeProvider theme={MUITheme}>
+        <CssBaseline />
         <App />
-      </BrowserRouter>
-    </ThemeProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
