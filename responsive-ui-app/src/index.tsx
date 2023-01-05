@@ -1,12 +1,12 @@
 import "./index.css";
 
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { GlobalStyles, theme } from "./styles";
 
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { MUITheme } from "./styles";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "styled-components";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -15,9 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={MUITheme}>
-        <CssBaseline />
+      <ThemeProvider theme={theme}>
         <App />
+        <GlobalStyles />
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

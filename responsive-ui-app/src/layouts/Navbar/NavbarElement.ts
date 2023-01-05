@@ -61,11 +61,11 @@ export const NavbarParagraph = styled.p`
 
 export const NavbarButton = styled.button`
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: ${({ theme }) => theme.primaryColors.primary_01};
   font-family: var(--font-family);
   left: 1153px;
   top: 55px;
-  background: #ff4820;
+  background: ${({ theme }) => theme.secondaryColors.secondaryBackground};
   border-radius: 5px;
   font-weight: 500;
   font-size: 18px;

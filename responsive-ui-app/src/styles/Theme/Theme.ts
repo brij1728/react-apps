@@ -1,25 +1,27 @@
-import { green, purple, red } from "@mui/material/colors";
+import {
+  breakpoints,
+  fontSizes,
+  primaryColors,
+  secondaryColors,
+  space,
+} from "./ThemeUtils";
 
-import { createTheme } from "@mui/material/styles";
+import { DefaultTheme } from "styled-components";
 
-export const MUITheme = createTheme({
-  palette: {
-    primary: {
-      main: purple[500],
-    },
-    secondary: {
-      main: green[500],
-    },
-    otherColor: {
-      main: "#999",
-    },
-    background: {
-      default: " #040c18",
-      paper: "#FFD600",
-    },
-  },
+declare module "styled-components" {
+  interface DefaultTheme {
+    breakpoints: string[];
+    fontSizes: string[];
+    space: string[];
+    primaryColors: { [key in keyof typeof primaryColors]: string };
+    secondaryColors: { [key in keyof typeof secondaryColors]: string };
+  }
+}
 
-  status: {
-    danger: red[500],
-  },
-});
+export const theme: DefaultTheme = {
+  breakpoints,
+  fontSizes,
+  space,
+  primaryColors,
+  secondaryColors,
+};
