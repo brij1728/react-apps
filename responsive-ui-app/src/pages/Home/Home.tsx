@@ -1,18 +1,19 @@
-import "./Home.css";
+import "./HomeElement.ts";
 
 import { Blog, Possibility, WhatGPT3 } from "../../containers";
 import { Brand, CTA } from "../../components";
 import { Footer, Header, Navbar } from "../../layouts";
 
 import { Feature } from "../../features";
+import { NavHeader } from "./HomeElement";
 
 export const Home = () => {
   return (
     <div>
-      <div className="gradient__bg">
+      <NavHeader>
         <Navbar />
         <Header />
-      </div>
+      </NavHeader>
       <Brand />
       <WhatGPT3 />
       <Feature />
