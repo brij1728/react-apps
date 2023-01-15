@@ -3,10 +3,18 @@ import {
   HeaderButton,
   HeaderContent,
   HeaderEmailInput,
+  HeaderImage,
+  HeaderImageContainer,
   HeaderInputContent,
+  HeaderPeople,
+  HeaderPeopleContent,
+  HeaderPeopleImg,
   HeaderSection,
   HeaderText,
 } from "./HeaderElement";
+
+import ai from "../../assets/ai.png";
+import people from "../../assets/people.png";
 
 export const Header = () => {
   return (
@@ -25,7 +33,16 @@ export const Header = () => {
           <HeaderEmailInput placeholder="Your Email Address"></HeaderEmailInput>
           <HeaderButton>Get Started</HeaderButton>
         </HeaderInputContent>
+        <HeaderPeople>
+          <HeaderPeopleImg src={people} alt="People" />
+          <HeaderPeopleContent>
+            1,600 people requested access a visit in last 24 hours
+          </HeaderPeopleContent>
+        </HeaderPeople>
       </HeaderContent>
+      <HeaderImageContainer>
+        <HeaderImage src={ai} alt="AI" />
+      </HeaderImageContainer>
     </HeaderSection>
   );
 };

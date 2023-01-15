@@ -3,7 +3,12 @@ import styled from "styled-components";
 export const HeaderSection = styled.div`
   display: flex;
   flex: 1;
-  /* background-color: grey; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 70px;
+  padding: 2rem 6rem;
 `;
 
 export const HeaderContent = styled.div`
@@ -11,12 +16,11 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   flex-flow: column wrap;
-  padding: 2rem 6rem;
   row-gap: 25px;
 `;
 export const GradientTextHeading = styled.h1`
-  display: flex;
   flex: 1;
+  display: flex;
   flex-flow: row wrap;
 
   font-family: "Manrope";
@@ -48,24 +52,32 @@ export const HeaderEmailInput = styled.input`
   display: flex;
   flex: 2;
 
-  background: ${({ theme }) => theme.primaryColors.primary_03};
-  border: 0;
+  background: ${({ theme }) => theme.primaryColors.primaryFooter};
+  border: 2px solid ${({ theme }) => theme.primaryColors.primaryFooter};
   outline: none;
   cursor: pointer;
 
   font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
   padding: 10px;
 `;
 export const HeaderButton = styled.button`
   display: flex;
   flex: 1;
   justify-content: space-between;
+  align-items: center;
+  border: none;
+
   background-color: ${({ theme }) => theme.primaryColors.primary_02};
-  border-color: ${({ theme }) => theme.primaryColors.primary_02};
-  -webkit-text-fill-color: ${({ theme }) => theme.primaryColors.primary_01};
+  color: ${({ theme }) => theme.primaryColors.primary_01};
 
   font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
   padding: 10px;
+  outline: none;
+  cursor: pointer;
 `;
 
 export const HeaderText = styled.div`
@@ -75,7 +87,38 @@ export const HeaderText = styled.div`
   color: ${({ theme }) => theme.primaryColors.primaryText};
 `;
 
-export const HeaderContentPeople = styled.div``;
+export const HeaderPeople = styled.div`
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+`;
 
-export const HeaderContentPeopleImg = styled.img``;
-export const HeaderContentPeopleContent = styled.h1``;
+export const HeaderPeopleImg = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+`;
+export const HeaderPeopleContent = styled.p``;
+
+export const HeaderImageContainer = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const HeaderImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`;
