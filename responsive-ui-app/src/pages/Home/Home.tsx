@@ -16,7 +16,7 @@ export const Home = () => {
       </NavHeader>
       <Brand />
       <WhatGPT3 />
-      <Feature />
+      <Feature title={"Home"} />
       <Possibility />
       <CTA />
       <Blog />
