@@ -4,9 +4,9 @@ export const GPT3Section = styled.div`
   flex: 1;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: space-between;
-  row-gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
   padding: 2rem 6rem;
 
   background: ${({ theme }) => theme.primaryColors.primaryFooter};
@@ -21,18 +21,18 @@ export const GPT3Feature = styled.div`
 `;
 
 export const GPT3Heading = styled.div`
+  width: 100%;
   flex: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 export const GradientTextHeading = styled.h1`
-  min-width: 50%;
-
   flex: 2;
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
 
@@ -52,10 +52,9 @@ export const GradientTextHeading = styled.h1`
 `;
 
 export const GPT3HeadingParagraph = styled.p`
-  min-width: 50%;
-
   flex: 1;
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
 
@@ -69,10 +68,12 @@ export const GPT3HeadingParagraph = styled.p`
 `;
 
 export const GPT3Container = styled.div`
+  height: 100%;
+  width: 100%;
   flex: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 
   gap: 50px;

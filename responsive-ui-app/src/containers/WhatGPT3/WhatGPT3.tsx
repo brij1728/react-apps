@@ -7,7 +7,7 @@ import {
   GradientTextHeading,
 } from "./GPT3Element";
 
-import { Feature } from "../../features";
+import { Feature } from "../../components";
 
 export const WhatGPT3 = () => {
   return (

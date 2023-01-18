@@ -4,7 +4,7 @@ import { Blog, Possibility, WhatGPT3 } from "../../containers";
 import { Brand, CTA } from "../../components";
 import { Footer, Header, Navbar } from "../../layouts";
 
-import { Feature } from "../../features";
+import { Features } from "../../features";
 import { NavHeader } from "./HomeElement";
 
 export const Home = () => {
@@ -16,7 +16,7 @@ export const Home = () => {
       </NavHeader>
       <Brand />
       <WhatGPT3 />
-      <Feature title={"Home"} />
+      <Features />
       <Possibility />
       <CTA />
       <Blog />
