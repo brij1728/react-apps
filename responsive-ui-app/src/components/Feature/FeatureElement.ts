@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const FeatureSection = styled.div`
   height: 100%;
@@ -9,6 +9,21 @@ export const FeatureSection = styled.div`
   align-items: flex-start;
 
   gap: 20px;
+  row-gap: 20px;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+    }
+
+    @media only screen and (max-width: ${theme.breakpoints.md}) {
+      flex-flow: column wrap;
+    }
+
+    @media only screen and (max-width: ${theme.breakpoints.lg}) {
+      flex-flow: row wrap;
+    }
+  `}
 `;
 export const FeatureTitleContainer = styled.div`
   height: 100%;
@@ -64,4 +79,9 @@ export const FeatureText = styled.p`
   line-height: 30px;
 
   color: ${({ theme }) => theme.primaryColors.primaryText};
+
+  ::selection {
+    background: #e11d74;
+    color: white;
+  }
 `;

@@ -6,3 +6,4 @@ export { default as Slack } from "./slack.png";
 export { default as Atlassian } from "./atlassian.png";
 export { default as Shopify } from "./shopify.png";
 export { default as Dropbox } from "./dropbox.png";
+export { default as PossibilityImg } from "./possibility.png";

@@ -103,6 +103,14 @@ export const HeaderPeopleImg = styled.img`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  transition: 1s;
+
+  :hover {
+    transform: scale(1.1);
+  }
+
+  cursor: pointer;
 `;
 export const HeaderPeopleContent = styled.p``;
 
@@ -121,4 +129,12 @@ export const HeaderImage = styled.img`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  transition: 1s;
+
+  :hover {
+    transform: scale(1.2);
+  }
+
+  cursor: pointer;
 `;

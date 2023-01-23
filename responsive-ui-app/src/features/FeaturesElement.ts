@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const FeaturesSection = styled.div`
   flex: 1;
@@ -9,6 +9,20 @@ export const FeaturesSection = styled.div`
 
   gap: 20px;
   padding: 2rem 6rem;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints.md}) {
+      flex-flow: column wrap;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints.lg}) {
+      flex-flow: row wrap;
+    }
+  `}
 `;
 
 export const FeaturesHeading = styled.div`

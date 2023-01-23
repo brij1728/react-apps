@@ -18,17 +18,37 @@ export const secondaryColors = {
   secondary_02: "yellow",
   secondaryBackground: "#ff0000",
   secondaryGradientText: "#f49867",
+  secondarySubtext: "#71E5FF",
   secondaryGradientBackground: rgba(4, 12, 24, 1),
 };
 
 export const breakpoints = {
   xs: "0",
-  sm: "600px",
+  sm: "650px",
   md: "960px",
   lg: "1280px",
   xl: "1920px",
 };
 
+const sizes = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const devices = {
+  mobileS: `(min-width: ${sizes.mobileS})`,
+  mobileM: `(min-width: ${sizes.mobileM})`,
+  mobileL: `(min-width: ${sizes.mobileL})`,
+  tablet: `(min-width: ${sizes.tablet})`,
+  laptop: `(min-width: ${sizes.laptop})`,
+  laptopL: `(min-width: ${sizes.laptopL})`,
+  desktop: `(min-width: ${sizes.desktop})`,
+};
 export const fontSizes = {
   small: 14,
   medium: 16,
