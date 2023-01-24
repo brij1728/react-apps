@@ -4,6 +4,7 @@ export const primaryColors = {
   primary_01: "#fff",
   primary_02: "#ff4820",
   primary_03: "#052d56",
+  primary_04: "#000000",
   primaryBackground: "#040c18",
   primaryFooter: "#031b34",
   primaryBlog: "#042c54",
@@ -16,6 +17,7 @@ export const primaryColors = {
 export const secondaryColors = {
   secondary_01: "red",
   secondary_02: "yellow",
+  secondary_03: " #0e0e0e",
   secondaryBackground: "#ff0000",
   secondaryGradientText: "#f49867",
   secondarySubtext: "#71E5FF",
