@@ -47,7 +47,12 @@ export const Blog = () => {
       </BlogGradientHeader>
       <BlogContainer>
         <BlogGroupA>
-          <Article articleImage={Blog01} articleTitle={"Blog01"} />
+          <Article
+            articleImage={Blog01}
+            articleTitle={"Blog01"}
+            date={"27th January 2023"}
+            fullLink={"Read Full Article"}
+          />
         </BlogGroupA>
         <BlogGroupB>
           {Articles?.map((item: ArticleProps, index) => {

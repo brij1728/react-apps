@@ -47,6 +47,8 @@ export const BlogGradientHeader = styled.h1`
 `;
 
 export const BlogContainer = styled.div`
+  width: 100%;
+  height: 100%;
   flex: 1;
   display: flex;
   flex-flow: row wrap;
@@ -68,7 +70,7 @@ export const BlogContainer = styled.div`
 `;
 
 export const BlogGroupA = styled.div`
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   flex: 0.5;
   display: flex;
@@ -78,13 +80,17 @@ export const BlogGroupA = styled.div`
 `;
 
 export const BlogGroupB = styled.div`
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: flex-start; */
+
   grid-gap: 2rem;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  `}
 `;
