@@ -104,7 +104,7 @@ export const NavbarMenuContainer = styled.div`
   }
 `;
 
-export const NavbarMenuImg = styled.svg`
+export const NavbarMenuImg = styled.img`
   cursor: pointer;
 `;
 
