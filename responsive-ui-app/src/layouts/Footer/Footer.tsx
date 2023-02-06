@@ -15,7 +15,7 @@ import {
   FooterText,
 } from "./FooterElement";
 
-import { Logo } from "../../assets";
+import Logo from "../../assets/logo.svg";
 
 export const Footer = () => {
   return (

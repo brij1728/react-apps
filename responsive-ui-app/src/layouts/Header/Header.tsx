@@ -1,4 +1,3 @@
-import { AI, People } from "../../assets";
 import {
   GradientTextHeading,
   HeaderButton,
@@ -13,6 +12,9 @@ import {
   HeaderSection,
   HeaderText,
 } from "./HeaderElement";
+
+import AI from "../../assets/ai.png";
+import People from "../../assets/people.png";
 
 export const Header = () => {
   return (

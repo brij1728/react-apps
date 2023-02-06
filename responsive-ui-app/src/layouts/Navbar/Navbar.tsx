@@ -15,7 +15,7 @@ import {
 } from "./NavbarElement";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 
-import { Logo } from "../../assets";
+import Logo from "../../assets/logo.png";
 import { useState } from "react";
 
 const Menu = () => (
