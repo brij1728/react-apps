@@ -9,7 +9,7 @@ import {
   PossibilityText,
 } from "./PossibilityElement";
 
-import { default as PossibilityImg } from "../../assets/possibility2.jpg";
+import { PossibilityImg } from "./import";
 
 export const Possibility = () => {
   return (
