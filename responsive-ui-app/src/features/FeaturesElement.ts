@@ -7,19 +7,23 @@ export const FeaturesSection = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  gap: 20px;
+  gap: 50px;
   padding: 2rem 6rem;
 
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
+      padding: 0.5rem 1rem;
+    }
+
+    @media only screen and(max-width: ${theme.breakpoints
+        .md}) and (min-width: ${theme.breakpoints.sm}) {
+      background-color: yellow;
+      flex-flow: column wrap;
+      padding: 0.5rem 0.5rem;
     }
 
     @media only screen and (min-width: ${theme.breakpoints.md}) {
-      flex-flow: column wrap;
-    }
-
-    @media only screen and (min-width: ${theme.breakpoints.lg}) {
       flex-flow: row wrap;
     }
   `}

@@ -11,9 +11,16 @@ export const PossibilitySection = styled.div`
   padding: 2rem 6rem;
 
   ${({ theme }) => css`
-    @media only screen and (max-width: ${theme.breakpoints.md}) {
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       gap: 25px;
+      padding: 0.5rem 1rem;
+    }
+    @media only screen and (max-width: ${theme.breakpoints
+        .md}) and (min-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      gap: 25px;
+      padding: 0.5rem 2.5rem;
     }
 
     @media only screen and (min-width: ${theme.breakpoints.md}) {

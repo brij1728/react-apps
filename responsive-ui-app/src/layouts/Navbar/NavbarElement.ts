@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   padding: 2rem 6rem;
 
   @media screen and(max-width: 700px) {
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
   }
 
   @media screen and(max-width: 550px) {
