@@ -9,13 +9,13 @@ import {
   PossibilityText,
 } from "./PossibilityElement";
 
-import { PossibilityImg } from "./import";
+import { Possibilities } from "../../assets";
 
 export const Possibility = () => {
   return (
     <PossibilitySection>
       <PossibilityImageContainer>
-        <PossibilityImage src={PossibilityImg} alt={"Possibility Image"} />
+        <PossibilityImage src={Possibilities} alt={"Possibility Image"} />
       </PossibilityImageContainer>
       <PossibilityContent>
         <PossibilitySubtext>

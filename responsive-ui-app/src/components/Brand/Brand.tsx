@@ -1,4 +1,4 @@
-import { Atlassian, Dropbox, Google, Shopify, Slack } from "./import";
+import { Atlassian, Dropbox, Google, Shopify, Slack } from "../../assets";
 import { BrandImage, BrandSection } from "./BrandElement";
 
 export const Brand = () => {

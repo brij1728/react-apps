@@ -1,5 +1,5 @@
 import { Article, ArticleProps } from "../../components";
-import { Blog01, Blog02, Blog03, Blog04, Blog05 } from "./import";
+import { Blog01, Blog02, Blog03, Blog04, Blog05 } from "./../../assets";
 import {
   BlogContainer,
   BlogGradientHeader,

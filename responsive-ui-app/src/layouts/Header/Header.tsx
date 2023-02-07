@@ -1,4 +1,4 @@
-import { AI, People } from "./import";
+import { AI, People } from "../../assets";
 import {
   GradientTextHeading,
   HeaderButton,
