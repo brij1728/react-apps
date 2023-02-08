@@ -14,14 +14,13 @@ export const FeatureSection = styled.div`
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
+      gap: 10px;
     }
 
-    @media only screen and (max-width: ${theme.breakpoints.md}) {
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
       flex-flow: column wrap;
-    }
-
-    @media only screen and (max-width: ${theme.breakpoints.lg}) {
-      flex-flow: row wrap;
+      gap: 10px;
     }
   `}
 `;
@@ -64,6 +63,18 @@ export const FeatureTitle = styled.h1`
   letter-spacing: -0.04em;
 
   color: ${({ theme }) => theme.primaryColors.primary_01};
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  `}
 `;
 
 export const FeatureText = styled.p`
@@ -71,7 +82,6 @@ export const FeatureText = styled.p`
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  /* align-items: flex-start; */
   align-self: flex-start;
 
   font-weight: 500;
@@ -84,4 +94,16 @@ export const FeatureText = styled.p`
     background: #e11d74;
     color: white;
   }
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  `}
 `;

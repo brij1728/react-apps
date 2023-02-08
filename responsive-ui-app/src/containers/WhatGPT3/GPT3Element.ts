@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const GPT3Section = styled.div`
   flex: 1;
@@ -10,12 +10,24 @@ export const GPT3Section = styled.div`
   padding: 2rem 6rem;
 
   background: ${({ theme }) => theme.primaryColors.primaryFooter};
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      padding: 0.5rem 1rem;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .xs}) and (max-width: ${theme.breakpoints.md}) {
+      flex-flow: column wrap;
+      padding: 1rem 2.5rem;
+    }
+  `}
 `;
 
 export const GPT3Feature = styled.div`
   flex: 1;
   display: flex;
-  /* flex-flow: column wrap; */
   justify-content: space-between;
   align-items: center;
 `;
@@ -27,6 +39,23 @@ export const GPT3Heading = styled.div`
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  `}
 `;
 
 export const GradientTextHeading = styled.h1`
@@ -49,6 +78,17 @@ export const GradientTextHeading = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 24px;
+    }
+  `}
 `;
 
 export const GPT3HeadingParagraph = styled.p`
@@ -65,6 +105,19 @@ export const GPT3HeadingParagraph = styled.p`
   color: ${({ theme }) => theme.primaryColors.primarySubtext};
 
   cursor: pointer;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  `}
 `;
 
 export const GPT3Container = styled.div`
@@ -77,4 +130,17 @@ export const GPT3Container = styled.div`
   align-items: center;
 
   gap: 50px;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      gap: 10px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      flex-flow: column wrap;
+      gap: 10px;
+    }
+  `}
 `;

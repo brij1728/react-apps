@@ -3,13 +3,13 @@ import "./HomeElement.ts";
 import { Blog, Possibility, WhatGPT3 } from "../../containers";
 import { Brand, CTA } from "../../components";
 import { Footer, Header, Navbar } from "../../layouts";
+import { HomeSection, NavHeader } from "./HomeElement";
 
 import { Features } from "../../features";
-import { NavHeader } from "./HomeElement";
 
 export const Home = () => {
   return (
-    <div>
+    <HomeSection>
       <NavHeader>
         <Navbar />
         <Header />
@@ -21,6 +21,6 @@ export const Home = () => {
       <CTA />
       <Blog />
       <Footer />
-    </div>
+    </HomeSection>
   );
 };

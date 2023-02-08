@@ -19,7 +19,7 @@ export const HeaderSection = styled.div`
         .md}) and (min-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       gap: 25px;
-      padding: 0.5rem 2.5rem;
+      padding: 1rem 2.5rem;
     }
 
     @media only screen and (min-width: ${theme.breakpoints.md}) {

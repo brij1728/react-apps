@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const NavbarContainer = styled.nav`
   display: flex;
@@ -6,13 +6,15 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   padding: 2rem 6rem;
 
-  @media screen and(max-width: 700px) {
-    padding: 2rem 1rem;
-  }
+  ${({ theme }) => css`
+    @media screen and(max-width: ${theme.breakpoints.sm}) {
+      padding: 0.5rem 1rem;
+    }
 
-  @media screen and(max-width: 550px) {
-    padding: 2rem;
-  }
+    @media screen and(min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.md})
+      padding: 1rem 2.5 rem;
+    }
+  `}
 `;
 
 export const NavbarLinks = styled.div`
