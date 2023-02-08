@@ -14,17 +14,14 @@ export const FeaturesSection = styled.div`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       padding: 0.5rem 1rem;
+      gap: 20px;
     }
 
-    @media only screen and(max-width: ${theme.breakpoints
+    @media only screen and (max-width: ${theme.breakpoints
         .md}) and (min-width: ${theme.breakpoints.sm}) {
-      background-color: yellow;
       flex-flow: column wrap;
-      padding: 0.5rem 0.5rem;
-    }
-
-    @media only screen and (min-width: ${theme.breakpoints.md}) {
-      flex-flow: row wrap;
+      padding: 1rem 2.5rem;
+      gap: 35px;
     }
   `}
 `;
@@ -40,6 +37,12 @@ export const FeaturesHeading = styled.div`
   margin-right: 5rem;
 
   text-align: left;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.md}) {
+      margin-right: 0;
+    }
+  `}
 `;
 
 export const FeaturesGradientText = styled.h1`
@@ -61,6 +64,19 @@ export const FeaturesGradientText = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    @media only screen and (max-width: ${theme.breakpoints
+        .md}) and (min-width: ${theme.breakpoints.sm}) {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  `}
 `;
 
 export const FeaturesText = styled.div`
@@ -77,6 +93,12 @@ export const FeaturesText = styled.div`
   color: ${({ theme }) => theme.primaryColors.primarySubtext};
 
   margin-top: 2rem;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      margin-top: 0;
+    }
+  `}
 `;
 
 export const FeaturesContainer = styled.div`

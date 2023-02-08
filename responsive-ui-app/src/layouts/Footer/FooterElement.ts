@@ -13,11 +13,13 @@ export const FooterSection = styled.div`
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       gap: 30px;
+      padding: 0.5rem 1rem;
     }
 
     @media only screen and (min-width: ${theme.breakpoints
         .sm}) and (max-width: ${theme.breakpoints.md}) {
       gap: 30px;
+      padding: 1rem 2.5rem;
     }
   `}
 `;
