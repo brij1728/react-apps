@@ -21,7 +21,7 @@ export const FeaturesSection = styled.div`
         .md}) and (min-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       padding: 1rem 2.5rem;
-      gap: 35px;
+      gap: 20px;
     }
   `}
 `;
@@ -95,7 +95,7 @@ export const FeaturesText = styled.div`
   margin-top: 2rem;
 
   ${({ theme }) => css`
-    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+    @media only screen and (max-width: ${theme.breakpoints.md}) {
       margin-top: 0;
     }
   `}

@@ -18,7 +18,7 @@ export const GPT3Section = styled.div`
     }
 
     @media only screen and (min-width: ${theme.breakpoints
-        .xs}) and (max-width: ${theme.breakpoints.md}) {
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
       flex-flow: column wrap;
       padding: 1rem 2.5rem;
     }
@@ -127,7 +127,7 @@ export const GPT3Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 50px;
 
@@ -135,6 +135,7 @@ export const GPT3Container = styled.div`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       gap: 10px;
+      justify-content: space-between;
     }
 
     @media only screen and (min-width: ${theme.breakpoints
