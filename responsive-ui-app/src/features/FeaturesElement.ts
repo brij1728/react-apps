@@ -67,13 +67,13 @@ export const FeaturesGradientText = styled.h1`
 
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 25px;
     }
 
     @media only screen and (max-width: ${theme.breakpoints
         .md}) and (min-width: ${theme.breakpoints.sm}) {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 35px;
     }
   `}
@@ -95,7 +95,16 @@ export const FeaturesText = styled.div`
   margin-top: 2rem;
 
   ${({ theme }) => css`
-    @media only screen and (max-width: ${theme.breakpoints.md}) {
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 0;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 14px;
+      line-height: 20px;
       margin-top: 0;
     }
   `}
