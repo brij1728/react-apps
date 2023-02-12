@@ -21,13 +21,17 @@ export const CTASection = styled.div`
   border-radius: 10.7236px;
 
   ${({ theme }) => css`
-    @media only screen and (max-width: ${theme.breakpoints.md}){
-        flex-flow: column wrap;
-        gap; 25px
-    };
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      gap: 25px;
+      margin: 1rem;
+    }
 
-    @media only screen and (min-width: ${theme.breakpoints.md}){
-        flex-flow: row wrap;
+    @media only screen and (max-width: ${theme.breakpoints
+        .md}) and (min-width: ${theme.breakpoints.sm}) {
+      flex-flow: column wrap;
+      gap: 25px;
+      margin: 2rem;
     }
   `}
 `;
