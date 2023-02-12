@@ -7,12 +7,13 @@ export const NavbarContainer = styled.nav`
   padding: 2rem 6rem;
 
   ${({ theme }) => css`
-    @media screen and(max-width: ${theme.breakpoints.sm}) {
+    @media screen and (max-width: ${theme.breakpoints.sm}) {
       padding: 0.5rem 1rem;
     }
 
-    @media screen and(min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.md})
-      padding: 1rem 2.5 rem;
+    @media screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      padding: 1rem 2.5rem;
     }
   `}
 `;
