@@ -39,6 +39,7 @@ export const GradientTextHeading = styled.h1`
   flex: 1;
   display: flex;
   flex-flow: row wrap;
+  text-align: center;
 
   font-family: "Manrope";
   font-style: normal;
@@ -55,6 +56,16 @@ export const GradientTextHeading = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 20px;
+    }
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 24px;
+    }
+  `}
 `;
 
 export const HeaderInputContent = styled.div`
@@ -103,6 +114,23 @@ export const HeaderText = styled.div`
   justify-content: space-between;
   text-align: justify;
   color: ${({ theme }) => theme.primaryColors.primaryText};
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  `}
 `;
 
 export const HeaderPeople = styled.div`

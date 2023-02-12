@@ -31,7 +31,7 @@ export const CTASection = styled.div`
         .md}) and (min-width: ${theme.breakpoints.sm}) {
       flex-flow: column wrap;
       gap: 25px;
-      margin: 2rem;
+      margin: 1rem;
     }
   `}
 `;
