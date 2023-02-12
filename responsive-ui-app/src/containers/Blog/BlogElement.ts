@@ -9,6 +9,19 @@ export const BlogSection = styled.div`
 
   gap: 50px;
   padding: 2rem 6rem;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      padding: 0.5rem 1rem;
+      gap: 10px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      padding: 1rem 2.5rem;
+      gap: 10px;
+    }
+  `}
 `;
 
 export const BlogGradientHeader = styled.h1`
@@ -60,7 +73,7 @@ export const BlogContainer = styled.div`
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.md}) {
       flex-flow: column wrap;
-      gap: 25px;
+      gap: 1rem;
     }
 
     @media only screen and (min-width: ${theme.breakpoints.md}) {
@@ -91,6 +104,13 @@ export const BlogGroupB = styled.div`
   ${({ theme }) => css`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
     }
   `}
 `;
