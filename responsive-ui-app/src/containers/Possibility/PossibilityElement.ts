@@ -63,6 +63,17 @@ export const PossibilityContent = styled.div`
   align-items: flex-start;
 
   gap: 20px;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      gap: 10px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      gap: 10px;
+    }
+  `}
 `;
 
 export const PossibilitySubtext = styled.h4`
@@ -94,6 +105,19 @@ export const PossibilityGradientText = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  `}
 `;
 
 export const PossibilityText = styled.p`
@@ -110,6 +134,18 @@ export const PossibilityText = styled.p`
   color: ${({ theme }) => theme.primaryColors.primaryText};
 
   margin-top: 1rem;
+
+  ${({ theme }) => css`
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      font-size: 14px;
+      margin-top: 0rem;
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      font-size: 14px;
+    }
+  `}
 `;
 
 export const PossibilitySubHeading = styled.h2`
