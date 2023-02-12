@@ -101,6 +101,7 @@ export const HeaderText = styled.div`
   display: flex;
   flex: 1;
   justify-content: space-between;
+  text-align: justify;
   color: ${({ theme }) => theme.primaryColors.primaryText};
 `;
 

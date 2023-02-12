@@ -51,6 +51,7 @@ export const FeaturesGradientText = styled.h1`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  text-align: justify;
 
   font-weight: 800;
   font-size: 34px;

@@ -49,6 +49,7 @@ export const BlogGradientHeader = styled.h1`
     @media only screen and (max-width: ${theme.breakpoints.sm}) {
       font-size: 22px;
       line-height: 32px;
+      text-align: center;
     }
 
     @media only screen and (min-width: ${theme.breakpoints

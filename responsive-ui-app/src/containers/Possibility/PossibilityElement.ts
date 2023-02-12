@@ -126,6 +126,7 @@ export const PossibilityText = styled.p`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  text-align: justify;
 
   font-weight: 500;
   font-size: 16px;

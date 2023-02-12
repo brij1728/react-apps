@@ -83,6 +83,7 @@ export const FeatureText = styled.p`
   flex-flow: row wrap;
   justify-content: flex-start;
   align-self: flex-start;
+  text-align: justify;
 
   font-weight: 500;
   font-size: 16px;
