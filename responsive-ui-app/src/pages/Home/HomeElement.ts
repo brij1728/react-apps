@@ -19,4 +19,3 @@ export const HomeSection = styled.div`
     }
   `}; */
 `;
-export const NavHeader = styled.div``;

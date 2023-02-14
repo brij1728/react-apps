@@ -1,11 +1,13 @@
 import "./App.css";
 
-import { RouterComponent } from "./routes";
+import { AppRouter } from "./routes";
+import { Navbar } from "./layouts";
 
 function App() {
   return (
     <div className="app">
-      <RouterComponent />
+      <Navbar />
+      <AppRouter />
     </div>
   );
 }

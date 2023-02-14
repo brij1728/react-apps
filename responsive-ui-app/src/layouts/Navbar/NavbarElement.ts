@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -18,7 +20,7 @@ export const NavbarContainer = styled.nav`
   `}
 `;
 
-export const NavbarLinks = styled.div`
+export const NavbarInnerContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-start;
@@ -36,16 +38,38 @@ export const NavLinksLogoImg = styled.img`
 
 export const NavbarLinksContainer = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: row;
-  @media screen and (max-width: 700px) {
-    display: none;
-  }
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 10px;
+  margin: 0px 150px;
+
+  ${({ theme }) => css`
+    @media screen and (max-width: ${theme.breakpoints.sm}) {
+      display: none;
+      margin: 0px 50px;
+    }
+
+    @media screen and (min-width: ${theme.breakpoints
+        .sm}) and (max-width: ${theme.breakpoints.md}) {
+      margin: 0px 50px;
+    }
+
+    @media screen and (min-width: ${theme.breakpoints
+        .md}) and (max-width: ${theme.breakpoints.lg}) {
+      margin: 0px 100px;
+    }
+  `}
 `;
 
 export const NavbarSign = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: row;
+  gap: 10px;
   @media screen and (max-width: 550px) {
     display: none;
   }
@@ -124,3 +148,11 @@ export const NavbarMenuSign = styled.div`
 `;
 
 export const NavbarMenuLinksContainer = styled.div``;
+
+export const NavbarLink = styled(Link)`
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+`;

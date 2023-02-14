@@ -3,14 +3,14 @@ import {
   NavLinksLogoImg,
   NavbarButton,
   NavbarContainer,
-  NavbarLinks,
+  NavbarInnerContainer,
+  NavbarLink,
   NavbarLinksContainer,
   NavbarMenu,
   NavbarMenuContainer,
   NavbarMenuLinksContainer,
   NavbarMenuParagraph,
   NavbarMenuSign,
-  NavbarParagraph,
   NavbarSign,
 } from "./NavbarElement";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
@@ -20,21 +20,15 @@ import { useState } from "react";
 
 const Menu = () => (
   <>
-    <NavbarParagraph>
-      <a href="#home">Home</a>
-    </NavbarParagraph>
-    <NavbarParagraph>
-      <a href="#wgpt3">What is GPT3</a>
-    </NavbarParagraph>
-    <NavbarParagraph>
-      <a href="#possibility">Open AI</a>
-    </NavbarParagraph>
-    <NavbarParagraph>
-      <a href="#features">Case Studies</a>
-    </NavbarParagraph>
-    <NavbarParagraph>
-      <a href="#blog">Library</a>
-    </NavbarParagraph>
+    <NavbarLink to={`#home`}>Home</NavbarLink>
+
+    <NavbarLink to={`#wgpt3`}>GPT3</NavbarLink>
+
+    <NavbarLink to={`#possibility`}>Open AI</NavbarLink>
+
+    <NavbarLink to={`#features`}>Case Studies</NavbarLink>
+
+    <NavbarLink to={`#blog`}>Library</NavbarLink>
   </>
 );
 
@@ -42,16 +36,16 @@ export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <NavbarContainer>
-      <NavbarLinks>
+      <NavbarInnerContainer>
         <NavLinksLogo>
           <NavLinksLogoImg src={logo} alt="logo" />
         </NavLinksLogo>
         <NavbarLinksContainer>
           <Menu />
         </NavbarLinksContainer>
-      </NavbarLinks>
+      </NavbarInnerContainer>
       <NavbarSign>
-        <NavbarParagraph> Sign In </NavbarParagraph>
+        <NavbarLink to={`#signIn`}> Sign In </NavbarLink>
         <NavbarButton>Sign Up</NavbarButton>
       </NavbarSign>
       <NavbarMenu>

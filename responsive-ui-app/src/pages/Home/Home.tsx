@@ -2,18 +2,15 @@ import "./HomeElement.ts";
 
 import { Blog, Possibility, WhatGPT3 } from "../../containers";
 import { Brand, CTA } from "../../components";
-import { Footer, Header, Navbar } from "../../layouts";
-import { HomeSection, NavHeader } from "./HomeElement";
+import { Footer, Header } from "../../layouts";
 
 import { Features } from "../../features";
+import { HomeSection } from "./HomeElement";
 
 export const Home = () => {
   return (
     <HomeSection>
-      <NavHeader>
-        <Navbar />
-        <Header />
-      </NavHeader>
+      <Header />
       <Brand />
       <WhatGPT3 />
       <Features />
